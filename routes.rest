@@ -1,1 +1,3 @@
-#Localhost GET http://localhost:3000/contacts/
+// LOCALHOST ### GET http://localhost:3000/contacts ### GET http://localhost:3000/contacts/626c67ba7fbf4476d6afbe84 ### GET http://localhost:3000/contacts/626c67bd7fbf4476d6afbe86 ### GET http://localhost:3000/contacts/626cb1ae1e55fa34adbd06c8
+
+// PRODUCTION Deploy ### GET https://cse341-api-jacob.herokuapp.com/contacts ### GET https://cse341-api-jacob.herokuapp.com/contacts/626c67ba7fbf4476d6afbe84 ### GET https://cse341-api-jacob.herokuapp.com/contacts/626c67bd7fbf4476d6afbe86 ### GET https://cse341-api-jacob.herokuapp.com/contacts/626cb1ae1e55fa34adbd06c8
