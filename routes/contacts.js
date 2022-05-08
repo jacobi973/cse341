@@ -9,7 +9,7 @@ routes.get('/', async(req, res) =>{
 })
 
 routes.get('/:id', async(req, res) =>{
-    const findOne = req.params.id;
+    const findOne = await User.findOne({id: req.params.id});
     res.send({findOne});
 })
 module.exports = routes;
