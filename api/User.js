@@ -1,5 +1,4 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const Contact = require('../dbConnection/User');
 const routes = express.Router();
 

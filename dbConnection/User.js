@@ -17,5 +17,5 @@ const contact = new mongoose.Schema({
         type:String
     },
 }, {collection: 'contacts'});
-
-module.exports = Contact = mongoose.model('contact', contact);
+const Contact = mongoose.model('contact', contact);
+module.exports = Contact;
