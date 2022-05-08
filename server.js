@@ -1,5 +1,6 @@
 const express = require('express');
 const connectDB = require('./dbConnection/connection');
+const bodyParser = require('body-parser');
 const getDocument = require('./routes/contacts');
 
 const app = express();
@@ -12,5 +13,10 @@ app.listen(port, () => {
 })
 
 connectDB();
-app.use(express.json({extensions: false}));
+app.use(express.json({
+    extensions: false
+}));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use('/', require('./routes/index'))
