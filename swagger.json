@@ -5,7 +5,7 @@
     "description": "swagger",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341-api-jacob.herokuapp.com",
   "basePath": "/",
   "schemes": [
     "http"
