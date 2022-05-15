@@ -8,7 +8,7 @@
   "host": "cse341-api-jacob.herokuapp.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
