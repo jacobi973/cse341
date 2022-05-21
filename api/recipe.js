@@ -4,6 +4,7 @@ const routes = express.Router();
 
 
 routes.post('/', async (req, res) => {
+  try {
   const {
     name,
     ingredients,
@@ -32,7 +33,12 @@ routes.post('/', async (req, res) => {
     let recipeModelPublic = new Recipe(recipe)
     await recipeModelPublic.save();
   }
-  res.json(recipeModelPrivate);
+  res.json(recipeModelPrivate);  } catch (e) {
+    return res.status(500).send({
+      message:
+        e.message || 'Some error occurred while creating the Contact.',
+    });
+  }
 });
 
 routes.put('/put/:id', async (req, res) => {
