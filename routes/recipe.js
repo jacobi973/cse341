@@ -1,5 +1,5 @@
 const routes = require('express').Router();
-const Recipe = require('../dbConnection/recipe');
+const {Recipe} = require('../dbConnection/recipe');
 
 
 

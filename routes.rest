@@ -1,66 +1,42 @@
 // LOCALHOST
 ### Get all contacts
-GET http://localhost:3000/contacts
+GET http://localhost:3000/recipes
 
 ### Get single contact
-GET http://localhost:3000/contacts/626c67ba7fbf4476d6afbe84 
+GET http://localhost:3000/recipes/628949d2a5d583cb8dd74967 
 
 ### Create contact
 POST http://localhost:3000/api/userModel HTTP/1.1
 Content-Type: application/json
 
-  {
-  "firstName": "JacobiT",
-  "lastName": "terreell",
-  "email": "terr@t.com",
-  "favoriteColor": "yellow",
-  "birthday": "02/03/1997"
-  }
-
-### Put Contact / update contact
-PUT http://localhost:3000/api/userModel/put/62771fc8c5f02ba90113805b HTTP/1.1
-Content-Type: application/json
-
-  {
-  "firstName": "JacobiT put",
-  "lastName": "terreell",
-  "email": "terr@t.com",
-  "favoriteColor": "yellow",
-  "birthday": "02/03/1997"
-  }
-
-### Delete Contact / delete contact
-DELETE  http://localhost:3000/api/userModel/delete/62771fc8c5f02ba90113805b HTTP/1.1
+{
+    "name": "JacobiT",
+    "ingredients": ["terreell", "pizza"],
+    "instructions": "terr@t.com",
+    "public": false,
+    "img": "02/030",
+    "prepTime": "02/030",
+      "cookTime": "02/030",
+        "servings": "02/030"
+}
 
 // PRODUCTION Deploy 
 ### Get all
-GET https://cse341-api-jacob.herokuapp.com/contacts 
+GET https://cse341-api-jacob.herokuapp.com/recipes 
 ### Get by specific id
-GET https://cse341-api-jacob.herokuapp.com/contacts/626c67ba7fbf4476d6afbe84 
+GET https://cse341-api-jacob.herokuapp.com/recipes/628949d2a5d583cb8dd74967 
 
 ### Create contact
 POST https://cse341-api-jacob.herokuapp.com/api/userModel HTTP/1.1
 Content-Type: application/json
 
-  {
-  "firstName": "Heroko",
-  "lastName": "App",
-  "email": "heroku@t.com",
-  "favoriteColor": "yellow",
-  "birthday": "02/03/1997"
-  }
-
-### Put Contact / update contact
-PUT https://cse341-api-jacob.herokuapp.com/api/userModel/put/627726049d2b73ea190ffa7b HTTP/1.1
-Content-Type: application/json
-
-  {
-  "firstName": "Heroku put",
-  "lastName": "APP",
-  "email": "heroku@t.com",
-  "favoriteColor": "yellow",
-  "birthday": "02/03/1997"
-  }
-
-### Delete Contact / delete contact
-DELETE  https://cse341-api-jacob.herokuapp.com/api/userModel/delete/627726049d2b73ea190ffa7b HTTP/1.1
+{
+    "name": "JacobiT",
+    "ingredients": ["terreell", "pizza"],
+    "instructions": "terr@t.com",
+    "public": false,
+    "img": "02/030",
+    "prepTime": "02/030",
+      "cookTime": "02/030",
+        "servings": "02/030"
+}

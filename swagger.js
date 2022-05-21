@@ -5,7 +5,7 @@ const doc = {
     title: 'My API',
     description: 'swagger',
   },
-  host: 'cse341-api-jacob.herokuapp.com',
+  host: 'jacob-recipe.herokuapp.com',
   schemes: ['https'],
 };
 
