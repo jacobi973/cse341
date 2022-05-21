@@ -6,7 +6,7 @@ GET http://localhost:3000/recipes
 GET http://localhost:3000/recipes/628949d2a5d583cb8dd74967 
 
 ### Create contact
-POST http://localhost:3000/api/userModel HTTP/1.1
+POST http://localhost:3000/api/recipeModel HTTP/1.1
 Content-Type: application/json
 
 {
@@ -22,12 +22,12 @@ Content-Type: application/json
 
 // PRODUCTION Deploy 
 ### Get all
-GET https://cse341-api-jacob.herokuapp.com/recipes 
+GET https://jacob-recipe.herokuapp.com/recipes 
 ### Get by specific id
-GET https://cse341-api-jacob.herokuapp.com/recipes/628949d2a5d583cb8dd74967 
+GET https://jacob-recipe.herokuapp.com/recipes/628949d2a5d583cb8dd74967 
 
 ### Create contact
-POST https://cse341-api-jacob.herokuapp.com/api/userModel HTTP/1.1
+POST https://jacob-recipe.herokuapp.com/recipes/recipeModel HTTP/1.1
 Content-Type: application/json
 
 {
