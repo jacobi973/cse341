@@ -26,6 +26,24 @@ Content-Type: application/json
         "servings": "02/030"
 }
 
+### Put Contact / update contact
+PUT http://localhost:3000/api/recipeModel/put/62771fc8c5f02ba90113805b HTTP/1.1
+Content-Type: application/json
+
+  {
+    "name": "LOL",
+    "ingredients": ["terreell", "pizza"],
+    "instructions": "terr@t.com",
+    "public": false,
+    "img": "02/030",
+    "prepTime": "02/030",
+      "cookTime": "02/030",
+        "servings": "02/030"
+  }
+
+### Delete Contact / delete contact
+DELETE  http://localhost:3000/api/recipeModel/delete/62771fc8c5f02ba90113805b HTTP/1.1
+
 // PRODUCTION Deploy 
 ### Get all
 GET https://jacob-recipe.herokuapp.com/recipes 
@@ -33,7 +51,7 @@ GET https://jacob-recipe.herokuapp.com/recipes
 GET https://jacob-recipe.herokuapp.com/recipes/628949d2a5d583cb8dd74967 
 
 ### Create contact
-POST https://jacob-recipe.herokuapp.com/recipes/recipeModel HTTP/1.1
+POST https://jacob-recipe.herokuapp.com/api/recipeModel HTTP/1.1
 Content-Type: application/json
 
 {
@@ -46,3 +64,22 @@ Content-Type: application/json
       "cookTime": "02/030",
         "servings": "02/030"
 }
+
+
+### Put Contact / update contact
+PUT https://cse341-api-jacob.herokuapp.com/api/recipeModel/put/627726049d2b73ea190ffa7b HTTP/1.1
+Content-Type: application/json
+
+  {
+    "name": "herokuPut",
+    "ingredients": ["terreell", "pizza"],
+    "instructions": "terr@t.com",
+    "public": false,
+    "img": "02/030",
+    "prepTime": "02/030",
+      "cookTime": "02/030",
+        "servings": "02/030"
+  }
+
+### Delete Contact / delete contact
+DELETE  https://cse341-api-jacob.herokuapp.com/api/recipeModel/delete/627726049d2b73ea190ffa7b HTTP/1.1
