@@ -46,23 +46,23 @@ routes.post('/', async (req, res) => {
   }
 });
 
-// routes.put('/put/:id', async (req, res) => {
-//   RecipePrivate.findByIdAndUpdate(req.params.id, req.body, {
-//     new: true
-//   }, (err, user) => {
-//     if (err) return res.status(500).send(err);
-//     return res.send(user)
-//   })
-// })
+routes.put('/put/:id', async (req, res) => {
+  RecipePrivate.findByIdAndUpdate(req.params.id, req.body, {
+    new: true
+  }, (err, user) => {
+    if (err) return res.status(500).send(err);
+    return res.send(user)
+  })
+})
 
-// routes.delete('/delete/:id', async (req, res) => {
-//   RecipePrivate.findByIdAndRemove(req.params.id, (err, todo) => {
-//     if (err) return res.status(500).send(err);
-//     const response = {
-//       message: "Recipe successfully deleted",
-//       id: todo._id
-//     };
-//     return res.status(200).send(response);
-//   });
-// })
+routes.delete('/delete/:id', async (req, res) => {
+  RecipePrivate.findByIdAndRemove(req.params.id, (err, todo) => {
+    if (err) return res.status(500).send(err);
+    const response = {
+      message: "Recipe successfully deleted",
+      id: todo._id
+    };
+    return res.status(200).send(response);
+  });
+})
 module.exports = routes;

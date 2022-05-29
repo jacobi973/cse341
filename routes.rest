@@ -1,16 +1,22 @@
 // LOCALHOST
-### Get all contacts
+### Get all recipe Public
 GET http://localhost:3000/recipes
 
-### Get single contact
-GET http://localhost:3000/recipes/628949d2a5d583cb8dd74967 
+### Get all recipe Private
+GET http://localhost:3000/private
+
+### Get single recipe Public
+GET http://localhost:3000/recipes/
+
+### Get single recipe Private
+GET http://localhost:3000/private/6292fdf3126ee615b524122f
 
 ### Create contact
 POST http://localhost:3000/api/recipeModel HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "JacobiT",
+    "name": "LOL",
     "ingredients": ["terreell", "pizza"],
     "instructions": "terr@t.com",
     "public": false,

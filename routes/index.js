@@ -6,4 +6,5 @@ routes.get('/', (_req, res) => {
 });
 routes.use('/api/recipeModel', require('../api/recipeModel'))
 routes.use('/recipes', require('./recipe'))
+routes.use('/private', require('./recipePrivate'))
 module.exports = routes;

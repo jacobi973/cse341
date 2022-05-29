@@ -1,11 +1,11 @@
 const routes = require('express').Router();
-const {Recipe} = require('../dbConnection/recipe');
+const {RecipePrivate} = require('../dbConnection/recipe');
 
 
 
 routes.get('/', async(req, res) =>{
     try {
-        const all = await Recipe.find();
+        const all = await RecipePrivate.find();
         res.send({all});
     } catch (e) {
         return res.status(500).send({
@@ -18,16 +18,12 @@ routes.get('/', async(req, res) =>{
 
 routes.get('/:id', async(req, res) =>{
     try {
-        console.log(req.params.id)
-        if(!req.params.id){
-            throw 'parameteres not found';
-        }
-        const findOne = await Recipe.findOne({id: req.params.id});
+        const findOne = await RecipePrivate.findOne({id: req.params.id});
         res.send({findOne});
     } catch (e) {
         return res.status(500).send({
             message:
-            Recipe.message || 'Some error occurred while getting contact.',
+            RecipePrivate.message || 'Some error occurred while getting contact.',
           });
     }
 
