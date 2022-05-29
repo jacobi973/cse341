@@ -55,7 +55,7 @@ POST https://jacob-recipe.herokuapp.com/api/recipeModel HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "JacobiT",
+    "name": "dfhdfgh",
     "ingredients": ["terreell", "pizza"],
     "instructions": "terr@t.com",
     "public": false,
@@ -67,7 +67,7 @@ Content-Type: application/json
 
 
 ### Put Contact / update contact
-PUT https://cse341-api-jacob.herokuapp.com/api/recipeModel/put/627726049d2b73ea190ffa7b HTTP/1.1
+PUT https://jacob-recipe.herokuapp.com/api/recipeModel/put/628948de01efe8208083ee65 HTTP/1.1
 Content-Type: application/json
 
   {
@@ -82,4 +82,4 @@ Content-Type: application/json
   }
 
 ### Delete Contact / delete contact
-DELETE  https://cse341-api-jacob.herokuapp.com/api/recipeModel/delete/627726049d2b73ea190ffa7b HTTP/1.1
+DELETE  https://jacob-recipe.herokuapp.com/api/recipeModel/delete/628948de01efe8208083ee65 HTTP/1.1
