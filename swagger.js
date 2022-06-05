@@ -6,7 +6,7 @@ const doc = {
     description: 'swagger',
   },
   host: 'jacob-recipe.herokuapp.com',
-  schemes: ['https'],
+  schemes: ['https','http'],
 };
 
 const outputFile = './swagger.json';

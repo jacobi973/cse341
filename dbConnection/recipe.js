@@ -19,4 +19,12 @@ const recipePrivate = new mongoose.Schema({
    public: Boolean
 }, {collection: 'recipePrivate'});
 const RecipePrivate = mongoose.model('recipePrivate', recipePrivate);
-module.exports = {Recipe, RecipePrivate};
+
+const userSchema = new mongoose.Schema({
+    username: String,
+    googleId: String,
+    thumbnail: String
+}, {collection: 'users'});
+const User = mongoose.model('user', userSchema);
+
+module.exports = {Recipe, RecipePrivate, User};
