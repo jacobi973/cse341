@@ -10,6 +10,8 @@ const swaggerDocument = require('./swagger.json');
 const sessions = require('express-session');
 const app = express();
 const cors = require('cors');
+// eslint-disable-next-line no-unused-vars
+const authCheck = require('./routes/index');
 require('dotenv').config();
 const port = process.env.PORT || 3000;
 
@@ -42,7 +44,13 @@ app.use(bodyParser.urlencoded({
 // set up routes
 app.use('/auth', authRoutes);
 app.use('/', require('./routes/index'));
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use('/api-docs',   function(req, res, next){
+    if (!req.user) {
+        res.redirect('/auth/home');
+      } else {
+        next();
+      }
+}, swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(express.static("public"));
 
 app.listen(port, () => {
