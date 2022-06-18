@@ -9,7 +9,7 @@ GET http://localhost:3000/private
 GET http://localhost:3000/recipes/
 
 ### Get single recipe Private
-GET http://localhost:3000/private/6292fdf3126ee615b524122f
+GET http://localhost:3000/private/62894a61eb7f1cc02c8da0d2
 
 ### Create contact
 POST http://localhost:3000/api/recipeModel HTTP/1.1

@@ -17,8 +17,9 @@ routes.get('/', async(req, res) =>{
 })
 
 routes.get('/:id', async(req, res) =>{
+    console.log('helllo', req.params.id);
     try {
-        const findOne = await RecipePrivate.findOne({id: req.params.id});
+        const findOne = await RecipePrivate.findOne({_id: req.params.id});
         res.send({findOne});
     } catch (e) {
         return res.status(500).send({

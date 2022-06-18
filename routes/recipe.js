@@ -22,7 +22,7 @@ routes.get('/:id', async(req, res) =>{
         if(!req.params.id){
             throw 'parameteres not found';
         }
-        const findOne = await Recipe.findOne({id: req.params.id});
+        const findOne = await Recipe.findOne({_id: req.params.id});
         res.send({findOne});
     } catch (e) {
         return res.status(500).send({
