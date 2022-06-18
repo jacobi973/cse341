@@ -67,12 +67,12 @@
         }
       }
     },
-    "/api/recipeModel/put/{id}": {
+    "/api/recipeModel/put/{_id}": {
       "put": {
         "description": "",
         "parameters": [
           {
-            "name": "id",
+            "name": "_id",
             "in": "path",
             "required": true,
             "type": "string"
@@ -88,12 +88,12 @@
         }
       }
     },
-    "/api/recipeModel/delete/{id}": {
+    "/api/recipeModel/delete/{_id}": {
       "delete": {
         "description": "",
         "parameters": [
           {
-            "name": "id",
+            "name": "_id",
             "in": "path",
             "required": true,
             "type": "string"

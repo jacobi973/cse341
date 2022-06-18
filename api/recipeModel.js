@@ -46,8 +46,8 @@ routes.post('/', async (req, res) => {
   }
 });
 
-routes.put('/put/:id', async (req, res) => {
-  RecipePrivate.findByIdAndUpdate(req.params.id, req.body, {
+routes.put('/put/:_id', async (req, res) => {
+  RecipePrivate.findByIdAndUpdate(req.params._id, req.body, {
     new: true
   }, (err, user) => {
     if (err) return res.status(500).send(err);
@@ -55,8 +55,8 @@ routes.put('/put/:id', async (req, res) => {
   })
 })
 
-routes.delete('/delete/:id', async (req, res) => {
-  RecipePrivate.findByIdAndRemove(req.params.id, (err, todo) => {
+routes.delete('/delete/:_id', async (req, res) => {
+  RecipePrivate.findByIdAndRemove(req.params._id, (err, todo) => {
     if (err) return res.status(500).send(err);
     const response = {
       message: "Recipe successfully deleted",

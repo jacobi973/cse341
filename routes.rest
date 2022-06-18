@@ -27,11 +27,11 @@ Content-Type: application/json
 }
 
 ### Put Contact / update contact
-PUT http://localhost:3000/api/recipeModel/put/62771fc8c5f02ba90113805b HTTP/1.1
+PUT http://localhost:3000/api/recipeModel/put/62894a61eb7f1cc02c8da0d2 HTTP/1.1
 Content-Type: application/json
 
   {
-    "name": "LOL",
+    "name": "LOL lets goo",
     "ingredients": ["terreell", "pizza"],
     "instructions": "terr@t.com",
     "public": false,
